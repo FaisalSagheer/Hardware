@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #mobile-menu {
+            display: none;
+        }
+    </style>
     <title>Hardware</title>
 </head>
 
 <body>
     <nav class="bg-white">
 
-        <ul class="flex h-10 items-center border border-bottom border-gray-200 px-40 text-xs font-medium text-black">
-            <li class="pr-3 after:ml-1.5 after:text-gray-400 after:text-['1px'] after:content-['|']"><i class="fa-regular fa-address-card mr-2"></i>1234567890</li>
-            <li class="pr-3 after:ml-1.5 after:text-gray-400 after:text-['1px'] after:content-['|']"><i class="fa-regular fa-envelope mr-2"></i>email</li>
-            <li class="pr-3 after:ml-1.5 after:text-gray-400 after:text-['1px'] after:content-['|']"><i class="fa-regular fa-paper-plane mr-2"></i>Cutomer Care</li>
+        <ul
+            class="flex h-10 items-center border border-bottom border-gray-200 justify-center text-xs font-medium text-black">
+            <li class="pr-3 after:ml-1.5 after:text-gray-400 after:text-['1px'] after:content-['|']"><i
+                    class="fa-regular fa-address-card mr-2"></i>1234567890</li>
+            <li class="pr-3 after:ml-1.5 after:text-gray-400 after:text-['1px'] after:content-['|']"><i
+                    class="fa-regular fa-envelope mr-2"></i>email</li>
+            <li class="pr-3 after:ml-1.5 after:text-gray-400 after:text-['1px'] after:content-['|']"><i
+                    class="fa-regular fa-paper-plane mr-2"></i>Cutomer Care</li>
         </ul>
 
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -25,7 +36,7 @@
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     <!-- Mobile menu button-->
                     <button type="button"
-                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+                        class="relative inline-flex show items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset mt-6"
                         aria-controls="mobile-menu" aria-expanded="false">
                         <span class="absolute -inset-0.5"></span>
                         <span class="sr-only">Open main menu</span>
@@ -45,20 +56,19 @@
       
                   Menu open: "block", Menu closed: "hidden"
                 -->
-                        <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        <svg class="size-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" aria-hidden="true" data-slot="icon">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
                 <!-- Logo -->
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start mt-3">
-                    <div class="flex shrink-0 items-center">
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start lg:mt-3 mt-5">
+                    <div class="flex shrink-0 items-center pr-14">
                         <img class="h-22 w-auto" src="Logo2.png" alt="Your Company">
                     </div>
                     <div class="hidden sm:ml-6 sm:block mt-7">
                         <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium"
                                 aria-current="page">Products</a>
                             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium">New Products</a>
@@ -68,10 +78,11 @@
                     </div>
                 </div>
                 <!-- Register/Login -->
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-5">
+                <div
+                    class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-5">
                     <button type="button" class="relative rounded-lg bg-[#93e1c8] px-2 py-2">
                         <span class="absolute -inset-1.5"></span>
-                        <span class="text-white">Register</span>
+                        <span class="text-white text-sm lg:text-md">Register</span>
                         <!-- <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                             aria-hidden="true" data-slot="icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -87,7 +98,7 @@
                                 <!-- <span class="absolute -inset-1.5"></span> -->
                                 <!-- <span class="sr-only">Open user menu</span> -->
                                 <!-- <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
-                                <span class="px-3 py-2 text-[#373743]">Login</span>
+                                <span class="px-3 py-2 text-[#373743] text-sm lg:text-md">Login</span>
                             </button>
                         </div>
 
@@ -113,24 +124,20 @@
 
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="sm:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pt-2 pb-3">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-                    aria-current="page">Dashboard</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+            <div class="space-y-1 px-2 pt-2 pb-3 bg-gray-900">
+                <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-white"
+                    aria-current="page">Products</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-white">New Products</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-white">About Us</a>
+                <a href="#" class="block rounded-md px-3 py-2 text-sm font-medium text-white">Contact</a>
             </div>
         </div>
     </nav>
 
     <div class="relative isolate overflow-hidden bg-gray-900 mt-5 py-28 sm:py-32">
-        <img src="img1.jpg"
-            alt="#" class="absolute inset-0 -z-10 size-full h-200 object-cover object-right md:object-center">
-        
+        <img src="img1.jpg" alt="#"
+            class="absolute inset-0 -z-10 size-full h-200 object-cover object-right md:object-center">
+
         <div class="mx-auto max-w-7xl px-6 lg:px-8 bg-transparent-gray-100">
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Work with us</h2>
@@ -138,7 +145,7 @@
                     ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
                     fugiat.</p>
             </div>
-            
+
         </div>
     </div>
 
@@ -149,8 +156,7 @@
 
             <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -162,13 +168,13 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
 
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -180,12 +186,12 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -197,12 +203,12 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -214,12 +220,12 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -231,7 +237,8 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
                 <!-- More products... -->
@@ -260,34 +267,6 @@
                         </h3> -->
                         <p class="text-base font-semibold text-gray-900">Washers</p>
                     </div>
-                    
-                    <div class="group relative swiper-slide">
-                        <img src="socketscrews.jpg"
-                            alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
-                            class="w-md rounded-lg bg-white group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square">
-                        <!-- <h3 class="mt-6 text-sm text-gray-500">
-                            <a href="#">
-                                <span class="absolute inset-0"></span>
-                                SocketScrews
-                            </a>
-                        </h3> -->
-                        <p class="text-base font-semibold text-gray-900">Socket Screws</p>
-                    </div>
-                 
-
-                    <div class="group relative swiper-slide">
-                        <img src="washers.jpg"
-                            alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
-                            class="w-md rounded-lg bg-white group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square">
-                        <!-- <h3 class="mt-6 text-sm text-gray-500">
-                            <a href="#">
-                                <span class="absolute inset-0"></span>
-                                SocketScrews
-                            </a>
-                        </h3> -->
-                        <p class="text-base font-semibold text-gray-900">Washers</p>
-                    </div>
-                 
 
                     <div class="group relative swiper-slide">
                         <img src="socketscrews.jpg"
@@ -301,7 +280,7 @@
                         </h3> -->
                         <p class="text-base font-semibold text-gray-900">Socket Screws</p>
                     </div>
-                 
+
 
                     <div class="group relative swiper-slide">
                         <img src="washers.jpg"
@@ -315,7 +294,7 @@
                         </h3> -->
                         <p class="text-base font-semibold text-gray-900">Washers</p>
                     </div>
-                 
+
 
                     <div class="group relative swiper-slide">
                         <img src="socketscrews.jpg"
@@ -329,7 +308,7 @@
                         </h3> -->
                         <p class="text-base font-semibold text-gray-900">Socket Screws</p>
                     </div>
-                 
+
 
                     <div class="group relative swiper-slide">
                         <img src="washers.jpg"
@@ -343,9 +322,37 @@
                         </h3> -->
                         <p class="text-base font-semibold text-gray-900">Washers</p>
                     </div>
-                  
-                   
-                 
+
+
+                    <div class="group relative swiper-slide">
+                        <img src="socketscrews.jpg"
+                            alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                            class="w-md rounded-lg bg-white group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square">
+                        <!-- <h3 class="mt-6 text-sm text-gray-500">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                SocketScrews
+                            </a>
+                        </h3> -->
+                        <p class="text-base font-semibold text-gray-900">Socket Screws</p>
+                    </div>
+
+
+                    <div class="group relative swiper-slide">
+                        <img src="washers.jpg"
+                            alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                            class="w-md rounded-lg bg-white group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square">
+                        <!-- <h3 class="mt-6 text-sm text-gray-500">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                SocketScrews
+                            </a>
+                        </h3> -->
+                        <p class="text-base font-semibold text-gray-900">Washers</p>
+                    </div>
+
+
+
 
                 </div>
                 <div class="swiper-button-next"></div>
@@ -360,8 +367,7 @@
 
             <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -373,13 +379,13 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
 
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -391,12 +397,12 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
                 <div class="group relative">
-                    <img src="washers.jpg"
-                        alt="#"
+                    <img src="washers.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -408,12 +414,12 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
                 <div class="group relative">
-                    <img src="Bolts.jpg"
-                        alt="#"
+                    <img src="Bolts.jpg" alt="#"
                         class="aspect-square w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-auto lg:h-80">
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -425,7 +431,8 @@
                             </h3>
                             <p class="mt-1 text-sm text-gray-500">Gray</p>
                         </div>
-                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i class="fa-solid fa-phone mr-2"></i>Contact us</span>
+                        <span class="text-sm font-medium text-gray-600 border border-gray-300 py-2 px-3 rounded"><i
+                                class="fa-solid fa-phone mr-2"></i>Contact us</span>
                     </div>
                 </div>
                 <!-- More products... -->
@@ -477,7 +484,7 @@
                         </h3>
                         <p class="text-base font-semibold text-gray-900">More Info</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -552,7 +559,7 @@
                     </h5>
                     <ul class="list-none mt-6 space-y-2 flex">
                         <li><i></i><a href="#" class="pr-5 hover:text-gray-400 transition-all duration-500 ease-in-out">
-                               Facebook
+                                Facebook
                             </a></li>
                         <li><a href="#" class="pr-5 hover:text-gray-400 transition-all duration-500 ease-in-out">
                                 Twitter </a></li>
@@ -581,6 +588,21 @@
             slidesPerView: 3,
 
         });
+
+
+        const mobile_menu = document.getElementById('mobile-menu')
+        const Open = document.querySelector('.show')
+        Open.addEventListener('click', e => {
+            if (mobile_menu.style.display==='none' ) {
+                mobile_menu.style.display = 'block'
+            }
+            else{
+                mobile_menu.style.display='none'
+            }
+        }
+
+        )
+
     </script>
 </body>
 
